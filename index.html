@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Calculator app</title>
+</head>
+<body id="body" class="body1">
+  <main>
+    <h1 id="header" class="header1">calc</h1>
+    <p id="pTheme" class="p-theme1">THEME</p>
+    <p class="numbers1 t1">1</p>
+    <p class="numbers1 t2">2</p>
+    <p class="numbers1 t3">3</p>
+    <input id="input" class="input1" type="range" min="1" max="3" value="1" aria-label="Select theme">
+    <div id="screen" class="screen screen1">
+      <p id="digits" class="digits1" data-placeholder="0"></p>
+    </div>
+    <div id="pad" class="pad pad1">
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">7</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">8</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">9</button>
+      <button class="grey1" onclick="clickAnimation(this); deleteDigit()">DEL</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">4</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">5</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">6</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">+</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">1</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">2</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">3</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">-</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">.</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">0</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">/</button>
+      <button class="btn1" onclick="clickAnimation(this); writeDigits(this)">x</button>
+      <button class="bigger-one grey1" onclick="clickAnimation(this); reset()">RESET</button>
+      <button id="red" class="bigger-two red1" onclick="clickAnimation(this); calculate();">=</button>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Lukrex/calculator-web">Martin Moiba</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
